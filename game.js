@@ -16,13 +16,23 @@ const caretaker = {
 };
 
 const menuMusic = document.getElementById("menuMusic");
-const title = document.getElementById("titleScreen");
+
 
 function startGame() {
 
   menuMusic.play();
 
-  document.getElementById("titleScreen").style.display = "block";
+  const title = document.getElementById("titleScreen");
+
+  title.style.opacity = 0;
+
+  setTimeout(() => {
+
+    title.style.display = "none";
+
+    document.getElementById("gameScreen").style.display = "block";
+
+  }, 1000);
 
   story.innerHTML =
     "You could be the last one...";
