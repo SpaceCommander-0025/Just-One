@@ -22,18 +22,38 @@ function startGame() {
 
   menuMusic.play();
 
-  // Hide title screen
-  document.getElementById("titleScreen").style.display = "none";
+  const title = document.getElementById("titleScreen");
+  const game = document.getElementById("gameScreen");
 
-  // Show game screen
-  document.getElementById("gameScreen").style.display = "block";
+  title.style.opacity = 1;
 
-  story.innerHTML =
-    "You could be the last one...";
+  setTimeout(() => {
+    title.style.opacity = 0;
+  }, 300);
 
-  choices.innerHTML = `
-  <button onclick="begin()">I can do this</button>
-  `;
+  setTimeout(() => {
+    title.style.display = "none";
+    game.style.display = "block";
+
+    story.innerHTML = "You could be the last one...";
+
+    choices.innerHTML = `
+      <button onclick="begin()">I can do this</button>
+    `;
+  }, 1000);
+
+  // // Hide title screen
+  // document.getElementById("titleScreen").style.display = "none";
+
+  // // Show game screen
+  // document.getElementById("gameScreen").style.display = "block";
+
+  // story.innerHTML =
+  //   "You could be the last one...";
+
+  // choices.innerHTML = `
+  // <button onclick="begin()">I can do this</button>
+  // `;
 }
 
 function begin() {
