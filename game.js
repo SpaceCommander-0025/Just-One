@@ -15,7 +15,23 @@ const caretaker = {
   ]
 };
 
+const menuMusic = document.getElementById("menuMusic");
+
 function startGame() {
+
+  menuMusic.play();
+
+  document.getElementById("titleScreen").style.display = "none";
+
+  story.innerHTML =
+    "You could be the last one...";
+
+  choices.innerHTML = `
+  <button onclick="begin()">I can do this</button>
+  `;
+}
+
+function begin() {
   story.innerHTML =
     "You enter the abandoned library. A silver key rests on the desk.";
 
