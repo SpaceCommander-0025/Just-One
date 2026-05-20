@@ -34,9 +34,9 @@ function takeKey() {
     "You picked up the Silver Key.";
 
   choices.innerHTML = `
-    <button onclick="talkToCaretaker()">Talk to Caretaker</button>
-    <button onclick="leaveRoom()">Continue</button>
-    `;
+  <button onclick="talkToCaretaker()">Talk to Caretaker</button>
+  <button onclick="leaveRoom()">Leave Room</button>
+  `;
 }
 
 function leaveRoom() {
