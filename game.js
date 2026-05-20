@@ -16,12 +16,13 @@ const caretaker = {
 };
 
 const menuMusic = document.getElementById("menuMusic");
+const title = document.getElementById("titleScreen");
 
 function startGame() {
 
   menuMusic.play();
 
-  document.getElementById("titleScreen").style.display = "none";
+  document.getElementById("titleScreen").style.display = "block";
 
   story.innerHTML =
     "You could be the last one...";
