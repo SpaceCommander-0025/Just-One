@@ -24,15 +24,7 @@ function startGame() {
 
   const title = document.getElementById("titleScreen");
 
-  title.style.opacity = 0;
-
-  setTimeout(() => {
-
-    title.style.display = "none";
-
-    document.getElementById("gameScreen").style.display = "block";
-
-  }, 1000);
+  title.style.display = "none";
 
   story.innerHTML =
     "You could be the last one...";
