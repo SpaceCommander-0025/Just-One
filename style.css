@@ -9,3 +9,10 @@ button {
   margin: 5px;
   padding: 10px;
 }
+
+#npcDialogue {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid gray;
+  background-color: #222;
+}
