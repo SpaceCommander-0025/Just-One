@@ -6,6 +6,15 @@ const choices = document.getElementById("choices");
 const inventoryList = document.getElementById("inventory");
 const npcDialogue = document.getElementById("npcDialogue");
 
+const caretaker = {
+  name: "Caretaker",
+  dialogue: [
+    "You shouldn't be here...",
+    "The library remembers everything.",
+    "Find the hidden journal before it's too late."
+  ]
+};
+
 function startGame() {
   story.innerHTML =
     "You enter the abandoned library. A silver key rests on the desk.";
