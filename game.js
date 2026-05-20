@@ -33,9 +33,9 @@ function takeKey() {
   story.innerHTML =
     "You picked up the Silver Key.";
 
-  choices.innerHTML =
-    `<button onclick="leaveRoom()">Continue</button>
+  choices.innerHTML = `
     <button onclick="talkToCaretaker()">Talk to Caretaker</button>
+    <button onclick="leaveRoom()">Continue</button>
     `;
 }
 
