@@ -22,9 +22,11 @@ function startGame() {
 
   menuMusic.play();
 
-  const title = document.getElementById("titleScreen");
+  // Hide title screen
+  document.getElementById("titleScreen").style.display = "none";
 
-  title.style.display = "none";
+  // Show game screen
+  document.getElementById("gameScreen").style.display = "block";
 
   story.innerHTML =
     "You could be the last one...";
