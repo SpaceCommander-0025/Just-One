@@ -9,7 +9,7 @@ body {
 
   height: 100vh;
 
-  display: block;
+  display: flex;
 
   flex-direction: column;
 
@@ -24,6 +24,8 @@ body {
   background-size: cover;
 
   background-position: center;
+
+  background-repeat: no-repeat;
 }
 
 #gameScreen {
