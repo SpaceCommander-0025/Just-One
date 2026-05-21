@@ -118,8 +118,9 @@ h2 {
   text-align: center;
 }
 
-ul {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+#container {
+  display: flex;
+  align-items: center; /* Centers vertically */
+  justify-content: center; /* Optional: centers horizontally */
+  height: 100vh;
 }
