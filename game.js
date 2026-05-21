@@ -43,11 +43,13 @@ function startGame() {
 
     story.textContent = "You could be the last one...";
 
-    button.textContent = "I can do this";
+    createChoice("I can do this", begin);
 
-    button.addEventListener("click", begin);
+    // button.textContent = "I can do this";
 
-    choices.appendChild(button);
+    // button.addEventListener("click", begin);
+
+    // choices.appendChild(button);
 
     // choices.textContent = `
     //   <button onclick="begin()">I can do this</button>
@@ -60,11 +62,27 @@ function begin() {
   story.textContent = libraryScene.text;
   sceneImage.src = libraryScene.image;
 
-  choices.innerHTML = `
-  <button onclick="takeKey()">Take Key</button>
-  <button onclick="talkToCaretaker()">Talk to Caretaker</button>
-  <button onclick="leaveRoom()">Leave Room</button>
+  choices.textContent = "";
+
+  createChoice("Take Key", takeKey);
+  createChoice("Talk to Caretaker", talkToCaretaker);
+  createChoice("Leave Room", leaveRoom);
+
+  // choices.innerHTML = `
+  // <button onclick="takeKey()">Take Key</button>
+  // <button onclick="talkToCaretaker()">Talk to Caretaker</button>
+  // <button onclick="leaveRoom()">Leave Room</button>
   `;
+}
+
+function createChoice(text, action) {
+  const button = document.createElement("button");
+
+  button.textContent = text;
+
+  button.addEventListener("click", action);
+
+  choices.appendChild(button);
 }
 
 function takeKey() {
