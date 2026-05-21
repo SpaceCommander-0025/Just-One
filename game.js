@@ -16,6 +16,11 @@ const caretaker = {
   ]
 };
 
+const libraryScene = {
+  text: "You enter the abandoned library. A silver key rests on the desk.",
+  image: "images/library.jpg"
+};
+
 const menuMusic = document.getElementById("menuMusic");
 
 
@@ -52,8 +57,8 @@ function startGame() {
 }
 
 function begin() {
-  story.innerHTML =
-    "You enter the abandoned library. A silver key rests on the desk.";
+  story.textContent = libraryScene.text;
+  sceneImage.src = libraryScene.image;
 
   choices.innerHTML = `
   <button onclick="takeKey()">Take Key</button>
