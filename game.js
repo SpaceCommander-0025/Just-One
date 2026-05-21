@@ -22,7 +22,7 @@ const libraryScene = {
 };
 
 const candleScene = {
-  text: "I can do this.",
+  text: "You could be the last one...",
   image: "images/candle.gif"
 };
 
