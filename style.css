@@ -118,6 +118,8 @@ h2 {
   text-align: center;
 }
 
-#inventory {
-  
+ul {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
