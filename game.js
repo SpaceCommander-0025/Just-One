@@ -35,9 +35,9 @@ function startGame() {
     title.style.display = "none";
     game.style.display = "block";
 
-    story.innerHTML = "You could be the last one...";
+    story.textContent = "You could be the last one...";
 
-    choices.innerHTML = `
+    choices.textContent = `
       <button onclick="begin()">I can do this</button>
     `;
   }, 1000);
