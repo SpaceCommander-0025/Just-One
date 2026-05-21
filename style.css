@@ -33,8 +33,7 @@ body {
 }
 
 #gameScreen {
-  display: flex;
-  flex-direction: column;
+  display: none;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -84,6 +83,10 @@ button {
   cursor: pointer;
 
   transition: 0.3s;
+  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 button:hover {
@@ -96,6 +99,10 @@ button:hover {
   padding: 10px;
   border: 1px solid gray;
   background-color: #222;
+  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 #story {
@@ -103,11 +110,19 @@ button:hover {
   color: white;
   margin-top: 20px;
   margin-bottom: 20px;
+  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 #choice {
   font-family: Georgia, serif;
   color: white;
   margin-top: 20px;
+  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   margin-bottom: 20px;
 }
