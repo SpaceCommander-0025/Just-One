@@ -57,6 +57,9 @@ h1 {
   max-width: 300px; 
   border-radius: 10px; 
   box-shadow: 0 0 20px #444;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .tagline {
@@ -118,4 +121,16 @@ button:hover {
   align-items: center;
   text-align: center;
   margin-bottom: 20px;
+}
+
+h2 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#inventory {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
