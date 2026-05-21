@@ -21,6 +21,11 @@ const libraryScene = {
   image: "images/library.jpg"
 };
 
+const candleScene = {
+  text: "I can do this.",
+  image: "images/candle.gif"
+};
+
 const menuMusic = document.getElementById("menuMusic");
 
 
@@ -41,7 +46,8 @@ function startGame() {
     title.style.display = "none";
     game.style.display = "block";
 
-    story.textContent = "You could be the last one...";
+    loadScene(candleScene);
+    // story.textContent = "You could be the last one...";
 
     createChoice("I can do this", begin);
 
@@ -59,6 +65,8 @@ function startGame() {
 }
 
 function begin() {
+
+  menuMusic.stop();
   
   loadScene(libraryScene);
   // story.textContent = libraryScene.text;
