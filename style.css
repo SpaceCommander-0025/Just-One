@@ -87,3 +87,17 @@ button:hover {
   border: 1px solid gray;
   background-color: #222;
 }
+
+#story {
+  font-family: Georgia, serif;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#choice {
+  font-family: Georgia, serif;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
