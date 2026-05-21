@@ -72,7 +72,7 @@ function begin() {
   // <button onclick="takeKey()">Take Key</button>
   // <button onclick="talkToCaretaker()">Talk to Caretaker</button>
   // <button onclick="leaveRoom()">Leave Room</button>
-  `;
+  // `;
 }
 
 function createChoice(text, action) {
