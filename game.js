@@ -5,6 +5,7 @@ const story = document.getElementById("story");
 const choices = document.getElementById("choices");
 const inventoryList = document.getElementById("inventory");
 const npcDialogue = document.getElementById("npcDialogue");
+const button = document.createElement("button");
 
 const caretaker = {
   name: "Caretaker",
@@ -37,23 +38,17 @@ function startGame() {
 
     story.textContent = "You could be the last one...";
 
-    choices.textContent = `
-      <button onclick="begin()">I can do this</button>
-    `;
+    button.textContent = "I can do this";
+
+    button.addEventListener("click", begin);
+
+    choices.appendChild(button);
+
+    // choices.textContent = `
+    //   <button onclick="begin()">I can do this</button>
+    // `;
   }, 1000);
 
-  // // Hide title screen
-  // document.getElementById("titleScreen").style.display = "none";
-
-  // // Show game screen
-  // document.getElementById("gameScreen").style.display = "block";
-
-  // story.innerHTML =
-  //   "You could be the last one...";
-
-  // choices.innerHTML = `
-  // <button onclick="begin()">I can do this</button>
-  // `;
 }
 
 function begin() {
