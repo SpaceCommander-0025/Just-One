@@ -66,7 +66,7 @@ function startGame() {
 
 function begin() {
 
-  menuMusic.stop();
+  menuMusic.pause();
   
   loadScene(libraryScene);
   // story.textContent = libraryScene.text;
