@@ -7,27 +7,27 @@
 <body>
 
   <div id="titleScreen">
-  <h1>Just One...</h1>
+    <h1>Just One...</h1>
+  
+    <p class="tagline">
+      The ultimate choice is yours.
+    </p>
+  
+    <button onclick="startGame()">Start Game</button>
+  </div>
 
-  <p class="tagline">
-    The ultimate choice is yours.
-  </p>
+  <!-- GAME SCREEN WRAPPER -->
+  <div id="gameScreen">
+  
+    <div id="story"></div>
+  
+    <div id="choices"></div>
+  
+    <div id="npcDialogue"></div>
+  
+    <ul id="inventory"></ul>
 
-  <button onclick="startGame()">Start Game</button>
-</div>
-
-<!-- GAME SCREEN WRAPPER -->
-<div id="gameScreen">
-
-  <div id="story"></div>
-
-  <div id="choices"></div>
-
-  <div id="npcDialogue"></div>
-
-  <ul id="inventory"></ul>
-
-</div>
+  </div>
 
   <audio id="menuMusic" loop>
   <source src="audio/menu.mp3" type="audio/mp3">
