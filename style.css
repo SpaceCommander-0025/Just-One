@@ -80,10 +80,6 @@ button {
   cursor: pointer;
 
   transition: 0.3s;
-  
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 button:hover {
