@@ -1,7 +1,11 @@
 body {
   margin: 0;
   font-family: Georgia, serif;
-  /* background-color: black; */
+  background-color: black;
+  background-image: url("images/one.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
 }
 
@@ -19,13 +23,13 @@ body {
 
   text-align: center;
 
-  background-image: url("images/one.jpg");
+  /* background-image: url("images/one.jpg");
 
   background-size: cover;
 
   background-position: center;
 
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 #gameScreen {
@@ -35,8 +39,8 @@ body {
 h1 {
   font-size: 4rem;
   letter-spacing: 4px;
-  animation: flicker 3s infinite;
-  text-shadow: 0 0 20px black;
+  animation: flicker 1s infinite;
+  text-shadow: 0 0 20px blue;
 }
 
 @keyframes flicker {
