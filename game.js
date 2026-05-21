@@ -59,8 +59,10 @@ function startGame() {
 }
 
 function begin() {
-  story.textContent = libraryScene.text;
-  sceneImage.src = libraryScene.image;
+  
+  loadScene(libraryScene);
+  // story.textContent = libraryScene.text;
+  // sceneImage.src = libraryScene.image;
 
   choices.textContent = "";
 
@@ -73,6 +75,11 @@ function begin() {
   // <button onclick="talkToCaretaker()">Talk to Caretaker</button>
   // <button onclick="leaveRoom()">Leave Room</button>
   // `;
+}
+
+function loadScene(scene) {
+  story.textContent = scene.text;
+  sceneImage.src = scene.image;
 }
 
 function createChoice(text, action) {
