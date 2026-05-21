@@ -57,9 +57,6 @@ h1 {
   max-width: 300px; 
   border-radius: 10px; 
   box-shadow: 0 0 20px #444;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .tagline {
@@ -95,10 +92,6 @@ button:hover {
   padding: 10px;
   border: 1px solid gray;
   background-color: #222;
-  
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 #story {
@@ -116,10 +109,6 @@ button:hover {
   font-family: Georgia, serif;
   color: white;
   margin-top: 20px;
-  
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   margin-bottom: 20px;
 }
 
